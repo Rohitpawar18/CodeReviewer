@@ -5,7 +5,7 @@
 - Pull request ingestion for GitHub and GitLab.
 - Automated analysis across style, security, documentation, and performance.
 - Ranked feedback based on impact and confidence.
-- Review summaries for fast decision-making.
+- Snippet review UI for fast decision-making.
 
 ## ScaleDown Compression
 
@@ -13,10 +13,9 @@
 - Preserves key signals such as TODOs, signatures, and security-relevant lines.
 - Reduces review time without losing critical context.
 
-## Developer Feedback
+## Developer Workflow
 
-- Survey collection to measure satisfaction.
-- Dashboard views for review metrics and trends.
+- Dashboard views for snippet reviews and ranked feedback.
 
 ## Operational Features
 

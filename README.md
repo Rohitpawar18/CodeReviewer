@@ -1,6 +1,6 @@
 # Code Review Agent
 
-Automated code review system that ingests pull requests, runs analysis agents, and delivers ranked findings. Includes a review dashboard and developer satisfaction surveys.
+Automated code review system that ingests pull requests, runs analysis agents, and delivers ranked findings. Includes a snippet review dashboard.
 
 ## Highlights
 
@@ -8,13 +8,13 @@ Automated code review system that ingests pull requests, runs analysis agents, a
 - Static analysis hooks, security scanning, style checks, docs checks, performance hints
 - ScaleDown compression for large diffs and commit history
 - Feedback ranking by impact and confidence
-- Dashboard for review summaries and surveys
+- Dashboard for snippet reviews and ranked feedback
 
 ## Architecture
 
 - API service: review ingestion, queueing, persistence, REST endpoints
 - Worker service: background agent execution and ranking
-- Dashboard: web UI for reviews, metrics, and surveys
+- Dashboard: web UI for snippet reviews and results
 - Shared packages: types, repository utilities, ScaleDown, and agents
 
 ## Prerequisites
@@ -81,7 +81,6 @@ npm run build
 - POST /api/reviews
 - GET /api/reviews
 - GET /api/reviews/:id
-- POST /api/surveys
 
 ## ScaleDown
 

@@ -14,7 +14,7 @@ Code Review Agent is organized as a small set of services and shared packages th
   - Pulls jobs from queues.
   - Runs analysis agents and ranking.
 - Dashboard (apps/dashboard)
-  - React UI for summaries, findings, and surveys.
+  - React UI for snippet reviews and ranked feedback.
 - Shared packages (packages/*)
   - Agents, ScaleDown compression, types, and repository utilities.
 
@@ -23,11 +23,11 @@ Code Review Agent is organized as a small set of services and shared packages th
 1. Client submits a review request to the API.
 2. API stores metadata and enqueues analysis jobs.
 3. Worker executes agents and writes findings back to storage.
-4. Dashboard reads summaries and findings via the API.
+4. Dashboard reads review results via the API.
 
 ## Storage and Queueing
 
-- PostgreSQL: primary data store for reviews, findings, and surveys.
+- PostgreSQL: primary data store for reviews and findings.
 - Redis: job queue for background analysis (optional when API runs inline).
 
 ## Extensibility

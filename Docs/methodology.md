@@ -24,4 +24,4 @@
 
 - Review time reduction.
 - Coverage of major issue categories.
-- Developer satisfaction scores from surveys.
+- Accuracy and ranking quality of findings.
